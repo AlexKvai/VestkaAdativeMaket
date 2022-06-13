@@ -41,6 +41,8 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 /* ------- */
 ._container {
@@ -83,6 +85,11 @@ body {
     margin: 0 0 0 40px;
   }
 }
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 70px;
+  }
+}
 
 @media (max-width: 479px) {
   .header__menu {
@@ -114,4 +121,13 @@ body {
   color: #737373;
   line-height: calc(24 / 14 * 100%);
   font-weight: 600;
+}
+
+/*--Main--*/
+.page {
+  flex: 1 1 auto;
+}
+
+/*--Футер--*/
+.footer {
 }
