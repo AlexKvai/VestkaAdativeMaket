@@ -46,6 +46,8 @@ body {
 ._container {
   max-width: 1046px;
   margin: 0px auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
 }
 /* ------- */
 .header {
@@ -69,11 +71,47 @@ body {
 .header__menu {
   margin: 0 0 0 133px;
 }
+
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0 0 0 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0 0 0 40px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__menu {
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .menu__link {
+    font-size: 18px;
+  }
+}
+
 .menu {
+  padding: 5px 0;
 }
 .menu__list {
+  flex-wrap: wrap;
+  display: flex;
 }
 .menu__item {
 }
+
+.menu__item:not(:last-child) {
+  margin: 0 21px 0 0;
+}
+
 .menu__link {
+  color: #737373;
+  line-height: calc(24 / 14 * 100%);
+  font-weight: 600;
 }
